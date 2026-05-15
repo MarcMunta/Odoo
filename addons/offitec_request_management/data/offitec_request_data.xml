@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="demo_offitec_request_showroom" model="x_offitec.request">
+        <field name="x_name">SOL-001</field>
+        <field name="x_customer_name">Cliente showroom OffiTec</field>
+        <field name="x_request_date">2026-05-15</field>
+        <field name="x_project_type">Sala de reuniones</field>
+        <field name="x_room_type">Oficina central</field>
+        <field name="x_quantity">12</field>
+        <field name="x_budget">4800.0</field>
+        <field name="x_state">Confirmada</field>
+        <field name="x_notes">Solicitud de mesas modulares, sillas ergonómicas y armarios auxiliares.</field>
+    </record>
+</odoo>

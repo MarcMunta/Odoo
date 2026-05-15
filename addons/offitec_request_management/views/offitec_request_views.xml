@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_x_offitec_request_list" model="ir.ui.view">
+        <field name="name">x_offitec.request.list</field>
+        <field name="model">x_offitec.request</field>
+        <field name="arch" type="xml">
+            <list string="Solicitudes OffiTec">
+                <field name="x_name"/>
+                <field name="x_customer_name"/>
+                <field name="x_request_date"/>
+                <field name="x_project_type"/>
+                <field name="x_room_type"/>
+                <field name="x_quantity"/>
+                <field name="x_budget"/>
+                <field name="x_state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_x_offitec_request_form" model="ir.ui.view">
+        <field name="name">x_offitec.request.form</field>
+        <field name="model">x_offitec.request</field>
+        <field name="arch" type="xml">
+            <form string="Solicitud OffiTec">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="x_name"/>
+                            <field name="x_customer_name"/>
+                            <field name="x_request_date"/>
+                            <field name="x_state"/>
+                        </group>
+                        <group>
+                            <field name="x_project_type"/>
+                            <field name="x_room_type"/>
+                            <field name="x_quantity"/>
+                            <field name="x_budget"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Descripción">
+                            <field name="x_notes" placeholder="Necesidades del cliente, medidas, materiales o condiciones de entrega."/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_x_offitec_request" model="ir.actions.act_window">
+        <field name="name">Solicitudes OffiTec</field>
+        <field name="res_model">x_offitec.request</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crea la primera solicitud de mobiliario para OffiTec.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_offitec_root" name="OffiTec" sequence="25"/>
+    <menuitem id="menu_offitec_requests" name="Solicitudes" parent="menu_offitec_root" action="action_x_offitec_request" sequence="10"/>
+</odoo>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="model_x_offitec_request" model="ir.model">
+        <field name="name">Solicitud OffiTec</field>
+        <field name="model">x_offitec.request</field>
+    </record>
+
+    <record id="field_x_offitec_request_x_name" model="ir.model.fields">
+        <field name="model_id" ref="model_x_offitec_request"/>
+        <field name="name">x_name</field>
+        <field name="field_description">Referencia</field>
+        <field name="ttype">char</field>
+        <field name="required">True</field>
+    </record>
+
+    <record id="field_x_offitec_request_x_customer_name" model="ir.model.fields">
+        <field name="model_id" ref="model_x_offitec_request"/>
+        <field name="name">x_customer_name</field>
+        <field name="field_description">Cliente</field>
+        <field name="ttype">char</field>
+        <field name="required">True</field>
+    </record>
+
+    <record id="field_x_offitec_request_x_request_date" model="ir.model.fields">
+        <field name="model_id" ref="model_x_offitec_request"/>
+        <field name="name">x_request_date</field>
+        <field name="field_description">Fecha de solicitud</field>
+        <field name="ttype">date</field>
+    </record>
+
+    <record id="field_x_offitec_request_x_project_type" model="ir.model.fields">
+        <field name="model_id" ref="model_x_offitec_request"/>
+        <field name="name">x_project_type</field>
+        <field name="field_description">Tipo de proyecto</field>
+        <field name="ttype">char</field>
+    </record>
+
+    <record id="field_x_offitec_request_x_room_type" model="ir.model.fields">
+        <field name="model_id" ref="model_x_offitec_request"/>
+        <field name="name">x_room_type</field>
+        <field name="field_description">Espacio</field>
+        <field name="ttype">char</field>
+    </record>
+
+    <record id="field_x_offitec_request_x_quantity" model="ir.model.fields">
+        <field name="model_id" ref="model_x_offitec_request"/>
+        <field name="name">x_quantity</field>
+        <field name="field_description">Unidades estimadas</field>
+        <field name="ttype">integer</field>
+    </record>
+
+    <record id="field_x_offitec_request_x_budget" model="ir.model.fields">
+        <field name="model_id" ref="model_x_offitec_request"/>
+        <field name="name">x_budget</field>
+        <field name="field_description">Presupuesto estimado</field>
+        <field name="ttype">float</field>
+    </record>
+
+    <record id="field_x_offitec_request_x_state" model="ir.model.fields">
+        <field name="model_id" ref="model_x_offitec_request"/>
+        <field name="name">x_state</field>
+        <field name="field_description">Estado</field>
+        <field name="ttype">char</field>
+    </record>
+
+    <record id="field_x_offitec_request_x_notes" model="ir.model.fields">
+        <field name="model_id" ref="model_x_offitec_request"/>
+        <field name="name">x_notes</field>
+        <field name="field_description">Notas</field>
+        <field name="ttype">text</field>
+    </record>
+</odoo>

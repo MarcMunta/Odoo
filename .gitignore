@@ -9,7 +9,7 @@ __pycache__/
 *.log
 *.pot
 *.po~
-data/
+/data/
 filestore/
 sessions/
 tmp/
