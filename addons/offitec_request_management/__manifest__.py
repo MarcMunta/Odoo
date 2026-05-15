@@ -3,7 +3,7 @@
     "summary": "Manage office furniture requests for OffiTec.",
     "version": "19.0.1.0.0",
     "category": "Operations",
-    "author": "Izit",
+    "author": "EasIT",
     "license": "LGPL-3",
     "depends": ["base", "base_import_module"],
     "data": [
