@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_partner_form_rrss" model="ir.ui.view">
+        <field name="name">res.partner.form.rrss.linkedin.instagram</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="priority">90</field>
+        <field name="arch" type="xml">
+            <field name="website" position="after">
+                <field
+                    name="x_linkedin_url"
+                    widget="url"
+                    placeholder="https://www.linkedin.com/in/usuario"
+                />
+                <field
+                    name="x_instagram_url"
+                    widget="url"
+                    placeholder="https://www.instagram.com/usuario"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>
