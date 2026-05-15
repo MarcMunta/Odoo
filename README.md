@@ -37,10 +37,6 @@ En Docker, montar el directorio `addons` en `/mnt/extra-addons`.
 
 ## Prueba hecha
 
-Servidor probado:
+Se validaron los campos en `res.partner`, la vista heredada del formulario de contacto y un cliente de prueba con URLs de LinkedIn e Instagram. Las capturas y la justificacion visual estan en:
 
-- URL: `http://26.17.117.206:8069`
-- DB: `marcpoljoan`
-- Version detectada: `19.0-20260409`
-
-En la instancia viva se crearon los mismos campos en `res.partner`, se heredo la vista de formulario y se creo el cliente de prueba `Cliente RRSS - Marc Pol Joan`.
+- `docs/Act2-Justificacion-RRSS-Odoo.pdf`
